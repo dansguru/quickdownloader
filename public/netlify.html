@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netlify App Redirect</title>
+    <script>
+      // Handle client-side routing for Netlify
+      window.onload = function() {
+        // Redirect to the root with the current path
+        window.location.href = '/' + window.location.pathname.split('/').filter(Boolean).join('/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
